@@ -1,0 +1,111 @@
+.banner img{
+    width: 100%;
+    box-shadow:  2px 4px 4px rgba(155, 155, 151, 0.259);
+}
+.banner p{
+    font-size: 13px;
+    position: absolute;
+    left: 170px;
+    top: 270px; 
+}
+.banner p a{
+    color: black;
+    text-decoration: none;
+}
+.wis-container{
+    margin: 30px 90px;
+    border: 1px solid rgb(182, 177, 177);
+    height: 80vh;
+}
+.headline{
+    display: flex;
+    gap: 250px;
+    background-color: #f8c952;
+    border-bottom: 1px solid rgb(182, 177, 177);
+}
+.headline h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 15px 20px;
+    
+}
+.p-wraper{
+    overflow-y: scroll;
+    height: 71vh;
+
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgb(159, 159, 159);
+}
+.prod-desc{
+    display: flex;
+    width: 30%;
+    gap: 15px;
+    align-items: center;
+
+}
+.prod-desc img{
+    width: 100px;
+}
+.w-price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+#addcart-btn button{
+    padding: 10px 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8c952;
+    color: rgb(14, 13, 13);
+    border-radius: 7px;
+    border: #c99909;
+    cursor: pointer;
+}
+#addcart-btn button:hover{
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+.price i{
+    color: gray;
+    cursor: pointer;
+
+}
+.price i:hover{
+    color: red;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+    
+}
+#c-shop{
+    background-color: rgb(78, 233, 233);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 1px 1px 5px inset black ;
+    border: none;
+    cursor: pointer;
+    
+}
+#v-cart{
+    background-color: rgb(204, 204, 242);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 1px 1px 5px inset black ;
+    border: none;
+    cursor: pointer;
+}
+#c-shop:hover{
+    transform: scale(0.9);
+}
+#v-cart:hover{
+    transform: scale(0.9);
+}

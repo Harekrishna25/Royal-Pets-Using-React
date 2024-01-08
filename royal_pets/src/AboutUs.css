@@ -1,0 +1,236 @@
+.about-right{
+    width: 25%;
+    background-color: #f6ff7b;
+    height: 90vh;
+    position: absolute;
+    left: 940px;
+    top: 370px;
+  }
+  header h1{
+    font-size: 70px;
+    text-align: center;
+    color: rgb(250, 172, 3);
+    font-family: 'DM Serif Text', serif;
+    text-shadow: 2px 2px rgb(16, 15, 15); 
+    margin: 20px 0; 
+  }
+  header p{
+    text-align: center;
+    font-family:  'Josefin sans', sans-serif;
+    font-size: 14px;
+    color: rgb(11, 11, 11);
+  }
+  header p a{
+    text-decoration: none;
+    margin-right: 3px;
+    color: rgb(19, 19, 19);
+    
+
+  }
+  header p span{
+    margin-left: 3px;
+  }
+  .about-us{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .right img{
+    width: 400px;
+    box-shadow: 1px 1px 15px  rgba(101, 101, 98, 0.777);
+  }
+  .about-us .right{
+    z-index: 99;
+  }
+  .about-us .left{
+    width: 40%;  
+  } 
+  .about-us p{
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  }
+  .about-us h2{
+    margin-left: 5px;
+    background-image: linear-gradient(to right, #f6ff7b, rgba(235, 23, 23, 0));
+    padding: 15px;
+    width: 100%;
+    color: rgb(10, 10, 10);
+    border-radius: 20px;
+  }
+  .pet-friendly h2{
+    margin-left: 7%;
+    background-image: linear-gradient(to right, #f6ff7b, rgba(235, 23, 23, 0));
+    padding: 15px;
+    width: 60%;
+    color: rgb(10, 10, 10);
+    border-radius: 20px;
+  }
+  .pet-friendly p{
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 8%;
+  }
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  .values h2{
+    margin-left: 7%;
+    background-image: linear-gradient(to right, rgb(250, 255, 105), rgba(235, 23, 23, 0));
+    width:60%;
+    padding: 15px;
+    color: rgb(15, 15, 15);
+    border-radius: 20px;
+  }
+  .values {
+    padding: 0;
+  }
+.values ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10%;
+    list-style: square;
+    margin-bottom: 3px;
+  }
+.values ul {
+    margin: 20px 0;
+
+  }
+.brochure-btn .btn-about{
+    background-color: rgb(28, 160, 237);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+    margin-bottom: 30px;
+  }
+.values .btn-about:hover {
+    background-color: rgb(99, 240, 125);
+    color: black;
+  }
+.brochure-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  }
+.box{
+  width: 250px;
+  height: 320px;
+  background-color: rgb(64, 181, 227);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.box p{
+  background-color: white;
+  margin: 10px;
+  height: 150px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box h1{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+.circle{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: rgba(108, 107, 107, 0.564);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 80px;
+}
+.container .box .circle img{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  z-index: 99;
+}
+  @media only screen and (max-width: 1024px){
+    .about-right{
+      left: 75%;
+    }
+    .right img{
+      width: 350px;
+    }
+  }
+  @media only screen and (max-width: 900px){
+    .about-right{
+      left: 73%;
+      height: 80vh;
+    }
+    .pet-friendly{
+      margin-left: -25px;
+    }
+    .values{
+      margin-left: -25px;
+    }
+  }
+  @media only screen and (max-width: 800px){
+    .right img{
+      width: 300px;
+    }
+    .about-right{
+      left: 73%;
+      height: 100vh;
+      top: 480px;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    h1{
+      font-size: 50px;
+    }
+    .about-us .left{
+      width: 100%;
+    }
+    .about-us{
+      display: block;
+    }
+    .about-right{
+      display: none;
+    }
+    .right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+    }
+    .pet-friendly{
+      display: block;
+    }
+    .values .btn-about{
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    h2{
+      font-size: 20px;
+    }
+    .values ul li {
+      margin-left: 13%;
+    }
+    .about-us p{
+      margin-left: 10px;
+    }
+  }

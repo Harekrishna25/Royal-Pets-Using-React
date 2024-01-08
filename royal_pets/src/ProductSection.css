@@ -1,0 +1,153 @@
+.prdct-banner img{
+    width: 100%;
+}
+#loading{
+    text-align: center;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Nunito Sans', sans-serif; 
+    padding: 10px 0;
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.5);
+}
+.heading h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.heading img{
+    width: 20%;
+}
+.product-container{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.product-card{
+    width: 26%;
+    min-width: 310px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.product-card:hover{
+    transform: scale(1.02);
+    transition: 0.4s ease-out;
+}
+.image-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#heart{
+    position: absolute;
+    font-size: 25px;
+    color: rgb(217, 217, 217);
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+}
+#heart:hover{
+    color: red;
+}
+.product-card img{
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-card img:hover{
+    transform: scale(1.2);
+    transition: 1.2s ease;
+}
+.srar-icon{
+    margin: 15px 0 5px 0px;
+}
+.srar-icon img{
+    width: 20px;
+}
+.srar-icon span{
+    font-size: 18px;
+    margin: 2px;
+}
+.product-card h3{
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 5px 0;
+}
+.description{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 5px 0;
+}
+.price{
+    margin: 15px 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.price p{
+    color: rgb(134, 134, 134);
+}
+.price p i{
+    font-size: 13px;
+}
+.price #price{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+#price i{
+    color: rgb(0, 0, 0);
+}
+.price #offer{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    color: red;
+    margin-bottom: 15px;
+}
+.card-button{
+    display: flex;
+    gap: 20px;
+    padding: 0 0 10px 5px;
+}
+.card-button button{
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.addtocart{
+    background-color: rgb(255, 211, 90);
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,0.3);
+}
+.buynow{
+    background-color: rgb(89, 89, 89);
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,0.3);
+    color: white;
+}
+.addtocart:hover{
+    background-color: rgb(89, 89, 89);
+    color: white;
+    border-radius: 0;
+    transform: scale(1.1);
+    transition: 0.3s ease-out;  
+}
+.buynow:hover{
+    background-color: rgb(250, 158, 0);
+    color: black;
+    border-radius: 0;
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
+}
+
+@media only screen and (max-width: 500px){
+    .heading img{
+        display: none;
+    }
+}

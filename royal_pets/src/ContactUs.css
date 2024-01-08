@@ -1,0 +1,211 @@
+.contact-heading h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 30px 0 0 10px;
+}
+.contact-heading p{
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.contents{
+    width: 100vw;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    
+}
+.contact-box{
+    height: 350px;
+    width: 280px;
+    background-color: rgb(229, 244, 253);
+    box-shadow: 0px 0px 10px gray;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.contact-box h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+.contact-box p{
+    padding: 10px;
+    height: 130px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.contact-box img{
+    width: 55px;
+}
+.contact-box img:hover{
+    bottom: 20px;
+    position: relative;
+    transition: 0.5s ease;
+}
+.contact-box h4{
+    margin-top: 30px;
+    width: fit-content;
+    font-size: 20px;
+    color: rgb(0, 137, 211);
+}
+.contact-box h4:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-out;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: 0px 0px 10px yellow;
+    color: black;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcecb0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-section{
+    width: 80%;
+    margin: 30px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 20px gray;
+}
+.left-section{
+    padding: 40px 40px;
+}
+.left-section h2{
+    color: rgb(255, 162, 0);
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.left-section p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.left-section input{
+    width: 250px;
+    height: 30px;
+    border: 1.5px solid rgb(255, 204, 0);
+    border-radius: 5px;
+    padding: 0 5px;
+    background-color: rgb(252, 245, 228);
+}
+.left-section textarea{
+    border: 1.5px solid rgb(255, 204, 0);
+    border-radius: 5px;
+    padding: 5px;
+    resize: vertical;
+    background-color: rgb(252, 245, 228);
+}
+.left-section button{
+    padding: 7px 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 204, 0);
+    background-color: rgb(255, 204, 0);
+    box-shadow: 0px 0px 10px rgb(255, 204, 0);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.left-section button:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-out;
+    border: 1px solid yellow;
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    box-shadow: 0px 0px 10px yellow;
+    border: 0.5px solid yellow;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.right-section img{
+    width: 300px;
+    
+}
+.right-section p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+@media only screen and (max-width: 1160px){
+    .right-section img{
+        width: 200px;    
+    }
+}
+@media only screen and (max-width: 940px){
+    .contact-section{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 610px){
+    .left-section textarea{
+        width: 300px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 670px){
+    .contact-section{
+        width: 80%;
+    }
+    .contact-heading p{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .contact-heading h1{
+        font-size: 30px;
+    }
+    .left-section{
+        padding: 30px;
+    }
+    .left-section h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    .left-section p{
+        text-align: center;
+    }
+    .left-section input{
+        width: auto;
+    }
+    .left-section textarea{
+        width: 100%;
+        height: 100px;
+    }
+    .left-section button{
+        padding: 5px 70px;
+    }
+    .contact-box{
+        width: 80%;
+    }
+}
+

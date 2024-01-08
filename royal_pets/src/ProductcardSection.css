@@ -1,0 +1,35 @@
+.petcard-section{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5px 40px;
+}
+.pet-card{
+    margin: 20PX 0;
+}
+.p-imgage img{
+    width: 84px;
+}
+.p-imgage img:hover{
+    transform: scale(1.2);
+    transition: o.5s ease;
+}
+.pet-card a{
+    text-decoration: none;
+    text-align: center;
+}
+.pet-card a p{
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 500px){
+    .p-imgage img{
+        width: 50px;
+    }
+    .pet-card a p{
+        font-size: small;
+    }
+    .petcard-section{
+        justify-content: space-around;
+    }
+}

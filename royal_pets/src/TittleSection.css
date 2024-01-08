@@ -1,0 +1,80 @@
+.home-section-title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.home-section-title img{
+    width: 15vw;
+}
+.home-section-title h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.7rem;
+}
+.shop-category{
+    margin: 30px 0;
+    width: 100%;
+    overflow:auto;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.shop-category img{
+    width: 22%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.shop-category img:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+.product-category{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.product-category img{
+    width: 40vw;
+    cursor: pointer;
+}
+.product-category img:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+    overflow: hidden;
+}
+.category-name{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+.category-name h2{
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;  
+}
+.category-name h2:hover{
+    color: maroon;
+    transform: scale(0.95);
+    transition: 0.2s ease-out;
+}
+.button-01{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#btn-01{
+    padding: 7px 35px;
+    border-radius: 8px;
+    background-color: rgb(50, 50, 50);
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+#btn-01:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
+}
