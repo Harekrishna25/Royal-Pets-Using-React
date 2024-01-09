@@ -11,17 +11,50 @@ function TittleSection() {
                 <h2>Top Products</h2>
             <img src="./images/wave_line.png" alt="wave_line" />
         </div>
-        <div className="shop-category">
-            <img src="https://m.media-amazon.com/images/I/717NC6AT5hL._SX679_.jpg" alt="" />
-            <img src="https://m.media-amazon.com/images/I/71u2OxCwC+L._SX679_.jpg" alt="" />
-            <img src="https://m.media-amazon.com/images/I/71+HlIJu4TL._SX679_.jpg" alt="" />
-            <img src="https://m.media-amazon.com/images/I/71iOhQkNIVL._SX679_.jpg" alt="" />
-
-            <img src="https://m.media-amazon.com/images/I/71bgO0tJA2L._SX679_.jpg" alt="" />
-            <img src="https://m.media-amazon.com/images/I/71EFLOqaFeL._SX679_.jpg" alt="" />
-            <img src="https://m.media-amazon.com/images/I/71Wvhvzx8YL._SX679_.jpg" alt="" />
-            <img src="https://m.media-amazon.com/images/I/71iOhQkNIVL._SX679_.jpg" alt="" />
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/717NC6AT5hL._SX679_.jpg"  alt="..." />
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="https://m.media-amazon.com/images/I/71u2OxCwC+L._SX679_.jpg" alt="..." />
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="https://m.media-amazon.com/images/I/71+HlIJu4TL._SX679_.jpg"  alt="..." />
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="https://m.media-amazon.com/images/I/71iOhQkNIVL._SX679_.jpg"  alt="..." />
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71bgO0tJA2L._SX679_.jpg"  alt="..." />
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://m.media-amazon.com/images/I/71EFLOqaFeL._SX679_.jpg" alt="..." />
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://m.media-amazon.com/images/I/71Wvhvzx8YL._SX679_.jpg" alt="..." />
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://m.media-amazon.com/images/I/71rL6rvd4aL._SX679_.jpg" alt="..." />
+                  </div>
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
         <div className="home-section-title">
             <img src="./images/wave_line.png" alt="wave_line" />

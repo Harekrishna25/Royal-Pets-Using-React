@@ -46,7 +46,7 @@ const AddToCart = ({id}) => {
                 </div>
                 <div class="button">
                 <Link to="/product_page"><button class="same-btn">Continue shopping</button></Link>
-                <Link to="/product_page"><button id="checkout">Checkout <img src="../images/cart_img/payicon.png" alt="pay icons" /></button></Link>
+                <Link to="#"><button id="checkout">Checkout <img src="../images/cart_img/payicon.png" alt="pay icons" /></button></Link>
                 </div>
             </div>
             <div id="order-cart">
