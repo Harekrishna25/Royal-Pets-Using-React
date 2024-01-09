@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import { Outlet, Link} from "react-router-dom";
 import './AddToCart.css';
 import { useFilterContext } from './context/FilterProductContext';
 import { useCartContext } from './context/CartContext';
-const AddToCart = () => {
-    const {cart} = useCartContext();
+const AddToCart = ({id}) => {
+    const {cart, removeItem} = useCartContext();
 
     const [CART,setCART] = useState([]);
     const [quantity, setQuantity] = useState(1);
@@ -44,31 +45,30 @@ const AddToCart = () => {
                     <p>Rs. <span>808.00</span></p>
                 </div>
                 <div class="button">
-                    <button class="same-btn">Continue shopping</button>
-                    <button class="same-btn">View Cart</button>
-                    <button id="checkout">Checkout <img src="../images/cart_img/payicon.png" alt="" /></button>
+                <Link to="/product_page"><button class="same-btn">Continue shopping</button></Link>
+                <Link to="/product_page"><button id="checkout">Checkout <img src="../images/cart_img/payicon.png" alt="pay icons" /></button></Link>
                 </div>
             </div>
             <div id="order-cart">
                 <h3>YOUR ORDER</h3>
                 {cart.map((cartItem,cartIndex) =>{
-
+                    const{id , image, tittle, price} = cartItem;
                     return(
                         <>
                         <div class="cart-container" key={cartIndex}>
                             <div class="cp-container">
-                                <img src={cartItem.image} alt="" />
-                                <p>{cartItem.tittle}</p> 
+                                <img src={image} alt="" />
+                                <p>{tittle}</p>
                             </div>
                             <div class="pp-container">
-                                <p>Rs. <span>{cartItem.price}</span></p>
+                                <p>Rs. <span>{price}</span></p>
                                 <div class="add-item">
                                     <button onClick={SubItem}>-</button>
-                                    <span>{}</span>
+                                    <span>{quantity}</span>
                                     <button onClick={AddItem}>+</button>
                                 </div>
-                                <p>Rs. <span>{cartItem.price * quantity}.00</span></p>
-                                <img src="../images/cart_img/bin.png" alt="" />
+                                <p>Rs. <span>{price * quantity}.00</span></p>
+                                <img id='bin' src="../images/cart_img/bin.png" alt="bin" onClick={()=>{removeItem(id)}}/>
                             </div>
                         </div>
                         <hr />

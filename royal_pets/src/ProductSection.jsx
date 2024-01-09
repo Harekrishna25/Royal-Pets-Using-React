@@ -8,11 +8,7 @@ import { useCartContext } from './context/CartContext';
 
 const ProductSection = ({}) => {
     const {AddCart} = useCartContext();
-//     const [cart, setCart] = useState([]);
-//     console.log(cart)
-//     const AddCart = (data) =>{
-//     setCart([...cart, {...data, quantity:1}]);
-//   }
+
     const{filter_products} = useFilterContext();
 
     const Products = filter_products;

@@ -17,7 +17,11 @@ const CartProvider = ({children}) =>{
     const AddCart = (curElm) =>{
         dispatch({type: "ADD_TO_CART", payload: {curElm}})
     };
-    return <CartContext.Provider value={{...state, AddCart}}>
+
+    const removeItem = (id) =>{
+        dispatch({type:"REMOVE_ITEM", payload: id})
+    }
+    return <CartContext.Provider value={{...state, AddCart, removeItem}}>
         {children}
     </CartContext.Provider>
 }
