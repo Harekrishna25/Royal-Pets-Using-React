@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import './AddToCart.css';
 import { useFilterContext } from './context/FilterProductContext';
 import { useCartContext } from './context/CartContext';
-const AddToCart = ({cart}) => {
-    
+const AddToCart = () => {
+    const {cart} = useCartContext();
 
     const [CART,setCART] = useState([]);
     const [quantity, setQuantity] = useState(1);
@@ -20,7 +20,7 @@ const AddToCart = ({cart}) => {
         setQuantity(quantity - 1);
     }
    else{
-    setCART(CART.filter.delete)
+    setCART([])
    }
 }   
     useEffect(()=>{
@@ -37,7 +37,7 @@ const AddToCart = ({cart}) => {
         <div class="cart-main">
             <div id="cart-summary">
                 <h3>SUMMARY</h3>
-                <p><span>3</span> items added in your shopping cart</p>
+                <p><span>{cart.length} items</span> added in your shopping cart</p>
                 <hr />
                 <div class="total">
                     <p>Total:</p>
@@ -51,7 +51,7 @@ const AddToCart = ({cart}) => {
             </div>
             <div id="order-cart">
                 <h3>YOUR ORDER</h3>
-                {CART?.map((cartItem,cartIndex) =>{
+                {cart.map((cartItem,cartIndex) =>{
 
                     return(
                         <>
@@ -64,7 +64,7 @@ const AddToCart = ({cart}) => {
                                 <p>Rs. <span>{cartItem.price}</span></p>
                                 <div class="add-item">
                                     <button onClick={SubItem}>-</button>
-                                    <span>{quantity}</span>
+                                    <span>{}</span>
                                     <button onClick={AddItem}>+</button>
                                 </div>
                                 <p>Rs. <span>{cartItem.price * quantity}.00</span></p>

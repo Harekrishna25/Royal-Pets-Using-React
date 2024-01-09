@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AppProvider>
     <FilterContextProvider>
-      {/* <CartProvider> */}
+      <CartProvider>
         <App />
-      {/* </CartProvider> */}
+      </CartProvider>
     </FilterContextProvider>
   </AppProvider>
 );

@@ -14,7 +14,7 @@ export const FilterContextProvider = ({children}) =>{
 
     const {products} = useProductContext();
 
-    const [state, dispatch] = useReducer(reducer, initialState)
+    const [state, dispatch] = useReducer(reducer, initialState);
 
     useEffect(()=>{
         dispatch({type:"LOAD_FILTER_PRODUCTS", payload: products})

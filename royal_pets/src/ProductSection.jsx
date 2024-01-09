@@ -4,12 +4,15 @@ import ReactDOM from "react-dom/client";
 import './ProductSection.css';
 import ProductData from './ProductData';
 import { useFilterContext } from './context/FilterProductContext';
+import { useCartContext } from './context/CartContext';
 
-const ProductSection = () => {
-    const [cart, setCart] = useState([]);
-    const AddCart = (data) =>{
-    setCart([...cart, {...data, quantity:1}]);
-  }
+const ProductSection = ({}) => {
+    const {AddCart} = useCartContext();
+//     const [cart, setCart] = useState([]);
+//     console.log(cart)
+//     const AddCart = (data) =>{
+//     setCart([...cart, {...data, quantity:1}]);
+//   }
     const{filter_products} = useFilterContext();
 
     const Products = filter_products;
@@ -25,7 +28,6 @@ const ProductSection = () => {
         <img src="./images/wave_line.png" alt="wave line" />
     </div>
     <br />
-    <Link to="/single_product">
     <div className="product-container">
         {Products.map((items)=>{
             
@@ -53,7 +55,7 @@ const ProductSection = () => {
                     </div>
                     <div className="card-button">
                         <Link to="/cartpage">
-                        <button className="addtocart" onClick={()=> AddCart(id, image, tittle,price, filter_products)}>Add to Cart</button></Link>
+                        <button className="addtocart" onClick={()=> AddCart(curElm) }>Add to Cart</button></Link>
                         <a href="https://www.amazon.in/Royal-Pets-Repellent-Kitten-Outdoor/dp/B0CP3HTYVF?ref_=ast_sto_dp" target='_blank'><button className="buynow">Buy Now</button></a>
                     </div>
                 
@@ -64,12 +66,10 @@ const ProductSection = () => {
             })
 
             )
-            // console.log(id);
            
         })}
         
         </div>
-    </Link>
 
     </div>
     )
